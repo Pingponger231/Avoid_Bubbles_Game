@@ -147,6 +147,7 @@ int d = 780;
                     DrawText("Game over", 100, 100, 100, RED);
                     DrawText(TextFormat("Total Score: %d", points), 270, 250, 30, BROWN);
                     DrawText("Press R to restart", 250, 380, 40, BLACK);
+                    EndDrawing();
                     if (IsKeyDown(KEY_R))
                     {
                         lifes = 3;
@@ -161,7 +162,6 @@ int d = 780;
                         Gameover = 0;
                         goto Restart;
                     }
-                    EndDrawing();
                 }
         }
     }
